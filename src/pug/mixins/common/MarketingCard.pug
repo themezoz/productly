@@ -1,0 +1,11 @@
+mixin MarketingCard(props)
+  .col-md-4.mb-4 
+    .card.overflow-hidden
+      img.card-img-top(src=`${CWD}assets/img/marketing/${props.img}.png`)
+      .card-body.text-start.ps-0
+        .d-flex.flex-column.flex-lg-row.justify-content-start.mb-1 
+          p.text-secondary By 
+            span.fw-bold=props.author
+            span=` | ${props.date}`
+        .d-flex.flex-column.flex-lg-row.justify-content-start.mb-2
+          h3.fw-bold=props.text
