@@ -25,12 +25,15 @@ append variables
   -
     var backgroundImage={
       "className":"z-index--1 bottom-0 d-none d-lg-block",
-      "image":`${CWD}assets/img/category/shape.png`
+      "image":`${CWD}assets/img/category/shape.png`,
+      attrs:{
+        style:'opacity:.5;'
+      }
     }
 
 
 mixin Feature
-  +Section.pt-5.pt-md-9#service
+  +Section(backgroundImage).pt-5.pt-md-9.mb-6#service
     //- .position-absolute.z-index--1.bottom-0.d-none.d-lg-block
     //-   img(src=`${CWD}assets/img/category/shape.png`, style="max-width: 100%" alt="service")
     //- +Background(backgroundImage)
@@ -38,9 +41,9 @@ mixin Feature
       h3.fs-xl-10.fs-lg-8.fs-7.fw-bold.font-base We design tools to unveil 
         br.d-none.d-xl-block
         |your superpowers
-    +Background(backgroundImage)
+
       .row 
         each val in services
           +FeatureCard(val)
       div.text-center
-        a.btn.btn-primary.btn-sm-lg.py-2.px-3.mb-7.fw-medium(href='#!' role='button') SIGN UP NOW
+        a.btn.btn-primary.btn-sm-lg.py-2.px-3.mb-2.fw-medium(href='#!' role='button') SIGN UP NOW

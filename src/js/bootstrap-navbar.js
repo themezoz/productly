@@ -50,19 +50,19 @@ const navbarInit = () => {
 		navbar.style.backgroundImage = 'none';
 
 		// Change navbar background color on scroll
-		// window.addEventListener(Events.SCROLL, () => {
-		// 	const { scrollTop } = html;
-		// 	let alpha = (scrollTop / windowHeight) * 0.35;
-		// 	// Add class on scroll
-		// 	navbar.classList.add('backdrop');
-		// 	if (alpha === 0) {
-		// 		navbar.classList.remove('backdrop');
-		// 	}
-		// 	alpha >= 1 && (alpha = 1);
-		// 	navbar.style.backgroundColor = `rgba(${colorRgb[0]}, ${colorRgb[1]}, ${colorRgb[2]}, ${alpha})`;
-		// 	navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
-		// 	alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? navbar.classList.add(paddingName) : navbar.classList.remove(paddingName);
-		// });
+		window.addEventListener(Events.SCROLL, () => {
+			const { scrollTop } = html;
+			let alpha = (scrollTop / windowHeight) * 0.35;
+			navbar.classList.add(paddingName);
+			// Add class on scroll
+			navbar.classList.add('backdrop');
+			if (alpha === 0) {
+				navbar.classList.remove('backdrop');
+			}
+			alpha >= 1 && (alpha = 1);
+			navbar.style.backgroundColor = `rgba(${colorRgb[0]}, ${colorRgb[1]}, ${colorRgb[2]}, ${alpha})`;
+			navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
+		});
 
 		// Toggle bg class on window resize
 		utils.resize(() => {
