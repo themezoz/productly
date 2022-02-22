@@ -53,7 +53,7 @@ const navbarInit = () => {
 		window.addEventListener(Events.SCROLL, () => {
 			const { scrollTop } = html;
 			let alpha = (scrollTop / windowHeight) * 0.35;
-			navbar.classList.add(paddingName);
+			// navbar.classList.add(paddingName);
 			// Add class on scroll
 			navbar.classList.add('backdrop');
 			if (alpha === 0) {

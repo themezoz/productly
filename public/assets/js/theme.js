@@ -302,8 +302,8 @@ var navbarInit = function navbarInit() {
 
     window.addEventListener(Events.SCROLL, function () {
       var scrollTop = html.scrollTop;
-      var alpha = scrollTop / windowHeight * 0.35;
-      navbar.classList.add(paddingName); // Add class on scroll
+      var alpha = scrollTop / windowHeight * 0.35; // navbar.classList.add(paddingName);
+      // Add class on scroll
 
       navbar.classList.add('backdrop');
 
