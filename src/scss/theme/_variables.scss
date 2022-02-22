@@ -81,7 +81,7 @@ $red: #DF6951 !default;
 $orange: #DF6951 !default;
 $yellow:#FF9900 !default; //made changes here
 $green: #79B93C !default;
-$teal: #006380 !default;
+$teal: #567592 !default;
 $cyan: #2fc4f1 !default;
 $light: #F0F4F9 !default;
 $dark-blue:  #2F281E!default; //changed to #2F281E
@@ -214,7 +214,7 @@ $spacers: map-merge(
 //|   Body
 //-----------------------------------------------*/
 $body-bg: $white !default;
-$body-color: $gray-900 !default;
+$body-color: $dark-blue !default;
 
 //*-----------------------------------------------
 //|   Link
@@ -332,8 +332,8 @@ $blockquote-font-size: $font-size-lg !default;
 //*-----------------------------------------------
 //|   Buttons and Forms
 //-----------------------------------------------*/
-$input-bg           :  $gray-200 !default;
-$input-placeholder-color:    $gray-900 !important;
+$input-bg           :  $white !default;
+$input-placeholder-color:   $navy-blue !important;
 $input-btn-font-size-lg:  $font-size-base !default;
 
 $btn-reveal-hover-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1),

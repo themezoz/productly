@@ -1,7 +1,7 @@
 append variables 
   -
     var background={
-      "className":" bottom-0 d-none d-lg-block",
+      "className":"z-index--1 bottom-0 d-none d-lg-block",
       "image":`${CWD}assets/img/superhero/oval.png`
     }
 
@@ -9,6 +9,18 @@ append variables
 mixin Superhero
   +Section.pt-5.pt-md-9#superhero
     +Background(background)
+    .row.justify-content-center
+      .col-lg-6
+        .d-flex.flex-column.text-center.py-10.my-10
+          h1.fw-bold.mb-4.fs-7 Need a super hero?
+          P.mb-5.text-info.fw-medium Do you require some help for your project: Conception workshop,
+            br
+            |prototyping, marketing strategy, landing page, Ux/UI?
+          .row.justify-content-center
+            .col-lg-6
+              button.btn.btn-primary.fs-1.btn-block.fw-medium.text-white Contact our expert
+
+
 
 
 
