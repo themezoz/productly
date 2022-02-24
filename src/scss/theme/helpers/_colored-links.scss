@@ -5,7 +5,7 @@
     &:hover,
     &:focus {
       @if $color == '900' {
-        color: $primary !important;
+        color: $warning !important;
       } @else {
         color: lighten($value, 15%) !important;
       }
