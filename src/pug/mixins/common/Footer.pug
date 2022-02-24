@@ -11,24 +11,24 @@ mixin Footer
 mixin PreFooter 
   +Section.pb-0.pb-lg-5
     .row.border-top.border-top-secondary.pt-7
-      .col-lg-3.col-md-7.col-12.mb-4.mb-md-6.mb-lg-0.order-0 
+      .col-lg-3.col-md-6.col-12.mb-4.mb-md-6.mb-lg-0.mb-sm-2.order-sm-1.order-md-1
         img.mb-4(src=`${CWD}assets/img/logo.svg`, width="184.35" alt="productly") 
 
-      .col-lg-3.col-md-4.mb-4.mb-lg-0.order-lg-1.order-md-1
+      .col-lg-3.col-md-6.mb-4.mb-lg-0.order-sm-3.order-md-2
         p.footer-heading-color.font-sans-serif.mb-3.mb-lg-4 Quick Links
         ul.list-unstyled.mb-0
           +FooterList('About us', 'Blog', 'Contact','FAQ')
-      .col-lg-3.col-md-4.mb-4.mb-lg-0.order-lg-2.order-md-2 
+      .col-lg-3.col-md-6.mb-4.mb-lg-0.order-sm-4.order-md-3
         p.footer-heading-color.font-sans-serif.mb-3.mb-lg-4 Legal stuff
         ul.list-unstyled.mb-0
           +FooterList('Disclaimer', 'Financing', 'Privacy Policy','Terms of Service')
-      .col-lg-3.col-md-4.mb-4.mb-lg-0.order-lg-3.order-md-
-        p.footer-heading-color.font-sans-serif.mb-3.mb-lg-4 knowing you're always on
-          br
+      .col-lg-3.col-md-6.col-6.mb-4.mb-lg-0.order-sm-2.order-md-4
+        p.footer-heading-color.font-sans-serif.mb-3.mb-lg-4 knowing you're always on 
+          br.d-none.d-sm-block
           |the best energy deal.
         form
-          input.form-control.mb-3.form-control-border(type='email' placeholder='Enter your phone Number' aria-label='phone')
-        button.btn.btn-warning.fs-1 Sign up Now
+          input.form-control.mb-3.py-2.rounded-1(type='email' placeholder='Enter your phone Number' aria-label='phone')
+        button.btn.btn-warning.fw-bold.py-2 Sign up Now
 
 
 
