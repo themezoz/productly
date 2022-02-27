@@ -34,11 +34,8 @@ append variables
 
 mixin Feature
   +Section(backgroundImage).pt-5.pt-md-9.mb-6#feature
-    //- .position-absolute.z-index--1.bottom-0.d-none.d-lg-block
-    //-   img(src=`${CWD}assets/img/category/shape.png`, style="max-width: 100%" alt="service")
-    //- +Background(backgroundImage)
     .mb-4.text-center  
-      h3.fs-xl-10.fs-lg-8.fs-7.fw-bold.font-base We design tools to unveil 
+      h1.fs-9.fw-bold We design tools to unveil 
         br.d-none.d-xl-block
         |your superpowers
 
@@ -46,4 +43,4 @@ mixin Feature
         each val in services
           +FeatureCard(val)
       div.text-center
-        a.btn.btn-warning.btn-sm-lg.py-2.px-3.mb-2.fw-medium(href='#!' role='button') SIGN UP NOW
+        a.btn.btn-warning.btn-md.mb-2(href='#!' role='button') SIGN UP NOW

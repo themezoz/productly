@@ -2,8 +2,9 @@
   @include round-btn(toRem(52))
 }
 .btn-secondary-outline{
-  color: #000;
+  color: #173A56;
   border-color: #BCD0E5;
+  border: toRem(1) solid #BCD0E5;
 }
 
 .primary-btn-shadow{
