@@ -229,7 +229,7 @@ $link-hover-decoration: underline;
 //*-----------------------------------------------
 //|   Components
 //-----------------------------------------------*/
-$border-radius: 1.5rem !default;
+$border-radius: .25rem !default;
 $border-radius-sm: 0.25rem !default;
 $border-radius-lg: 2.25rem !default;
 
@@ -347,15 +347,12 @@ $btn-focus-width: 0 !default;
 $btn-border-radius: 0.25rem !default;
 $btn-border-radius-lg: toRem(4) !default;
 
-$btn-padding-y-lg: 0.938rem;
-$btn-padding-x-lg: 2.563rem;
-$btn-font-size-lg: 1rem;
-$btn-padding-y-md: 2.063rem;
-$btn-padding-x-md: 1.7rem;
-$btn-font-size-md: 1.125rem;
-$btn-padding-y-sm: 0.688rem;
-$btn-padding-x-sm: 1.563rem;
-$btn-font-size-sm: 1rem;
+
+$input-btn-padding-y-lg:      .938rem !default;
+$input-btn-padding-x-lg:      2.563rem !default;
+
+$input-btn-padding-y:         .688rem !default;
+$input-btn-padding-x:         1.563rem !default;
 
 
 //*-----------------------------------------------

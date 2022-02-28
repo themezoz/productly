@@ -1,4 +1,5 @@
 extends layouts/LayoutTheme
+include mixins/common/PreFooter
 include mixins/common/Footer
 include mixins/common/FeatureCard
 include mixins/common/MarketingCard
@@ -23,7 +24,9 @@ append content
   +Marketer
   +Superhero
   +Marketing
+  +PreFooter
   +Footer
+
 
 append afterMainContent
   .modal.fade#popupVideo(tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true")

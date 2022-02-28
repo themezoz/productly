@@ -34,13 +34,12 @@ append variables
 
 mixin Feature
   +Section(backgroundImage).pt-5.pt-md-9.mb-6#feature
-    .mb-4.text-center  
-      h1.fs-9.fw-bold We design tools to unveil 
-        br.d-none.d-xl-block
-        |your superpowers
+    h1.fs-9.fw-bold.mb-4.text-center   We design tools to unveil 
+      br.d-none.d-xl-block
+      |your superpowers
 
-      .row 
-        each val in services
-          +FeatureCard(val)
-      div.text-center
-        a.btn.btn-warning.btn-md.mb-2(href='#!' role='button') SIGN UP NOW
+    .row 
+      each val in services
+        +FeatureCard(val)
+    .text-center
+      a.btn.btn-warning(href='#!' role='button') SIGN UP NOW

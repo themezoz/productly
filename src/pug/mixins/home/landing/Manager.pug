@@ -1,20 +1,17 @@
 
 mixin Manager 
   +Section.pt-5#manager
-    .row.align-items-start
-      .col-lg-6.justify-content-center.align-items-start
-        img(src=`${CWD}assets/img/manager/manager.png`, alt="shape").image-fluid
+    .row
+      .col-lg-6
+        img.img-fluid(src=`${CWD}assets/img/manager/manager.png`, alt="")
       .col-lg-6 
-        .row
-          h5.text-secondary Easier decision making for
-        .row.mb-2.fs-8.fw-bold
-          p Product Managers
-        .row.mb-2.fs-1.fw-medium.text-secondary
-          p
-            |The Myspace page defines the individual,his or her
-            |characteristics,traits,personal choices and the overall
-            br
-            |personality of the person.
+        h5.text-secondary Easier decision making for
+        p.fs-7.fw-bold.mb-2 Product Managers
+        p.mb-4.fw-medium.text-secondary
+          |The Myspace page defines the individual,his or her
+          |characteristics, traits, personal choices and the overall
+          br
+          |personality of the person.
 
         .d-flex.align-items-center.mb-3     
           img(src=`${CWD}assets/img/manager/tick.png` width='35' alt="tick").me-sm-4.me-2
@@ -26,9 +23,9 @@ mixin Manager
           p.fw-medium.mb-0.text-secondary We will only switch you to energy companies
             br
             |that we trust and will treat you right
-        .d-flex.align-items-center.mb-3.text-secondary 
+        .d-flex.align-items-center.mb-3
           img(src=`${CWD}assets/img/manager/tick.png` width='35' alt="tick").me-sm-4.me-2
-          p.fw-medium.mb-0 We track the markets daily and know where the
+          p.fw-medium.mb-0.text-secondary  We track the markets daily and know where the
             br
             |savings are.
 
